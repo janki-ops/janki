@@ -1,0 +1,27 @@
+
+        #txt
+        {
+            color: aqua;
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+        }
+        .box
+        {
+            color: brown;
+            background-color: chartreuse;
+            height: 200px;
+            width: 200px;
+            border-color: chocolate;
+            border-style: dotted;
+            display: block;
+            
+        }
+        h2
+        {
+            color: cornflowerblue;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+        }
+
