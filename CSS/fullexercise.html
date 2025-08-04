@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            border: 5px solid black;
+            line-height: 20px;
+            padding: 15px;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        .second {
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(119, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
+            height: 20px;
+            color: rgb(255, 55, 0);
+            padding: 20px;
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        #secondp {
+            border: 5px solid black;
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(119, 9, 121, 1) 51%, rgba(0, 212, 255, 1) 100%);
+            color: rgb(255, 55, 0);
+            font-family: "Caveat", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        .row3 {
+            border: 5px solid black;
+            height: 250px;
+            padding: 10px;
+
+        }
+
+        .trow1 {
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            color: rgb(255, 55, 0);
+
+        }
+
+        .trow2 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid gray;
+            color: rgb(255, 55, 0);
+
+        }
+
+        .trow3 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+        }
+
+        .row4 {
+            border: 5px solid black;
+            height: 250px;
+            padding: 10px;
+
+        }
+
+        .t1row1 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid rgba(255, 255, 0, 0.523);
+
+        }
+
+        .t2row2 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+
+            color: rgb(255, 55, 0);
+            border: 4px dashed black;
+
+        }
+
+        .t3row3 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid yellow;
+        }
+
+        .row5 {
+            border: 5px solid black;
+            height: 250px;
+            background-image: url(fullexe1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15px;
+            background-attachment: fixed;
+        }
+
+        .r1 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid rgba(255, 255, 255, 0.742)
+        }
+
+        .r2 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px dashed black;
+
+        }
+
+        .r3 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid red;
+        }
+
+        .row6 {
+            border: 5px solid black;
+            height: 300px;
+            background-image: url(fullexe1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15px;
+            background-attachment: fixed;
+        }
+
+        .r61 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid rgba(255, 255, 255, 0.742)
+        }
+
+        .r62 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px dashed black;
+        }
+
+        .r63 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid red;
+        }
+
+        .row7 {
+            border: 5px solid black;
+            height: 300px;
+            background-image: url(fullexe2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15px;
+            background-attachment: fixed;
+        }
+
+        .r71 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid rgba(255, 255, 255, 0.742)
+        }
+
+
+        .r72 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid black;
+        }
+
+        .r73 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px dashed white;
+
+
+        }
+
+        .row8 {
+            border: 5px solid black;
+            height: 300px;
+            background-image: url(fullexe3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:15px;
+            background-attachment: fixed;
+
+        }
+
+        .r81 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid yellow;
+
+        }
+
+        .r82 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px dashed black;
+        }
+
+        .r83 {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(255, 55, 0);
+            border: 2px solid red;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div align="center" style="color: yellow;"  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;>Indian History<br><br>
+            <hr>
+        </div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit non illum hic quos pariatur ipsam quo totam
+        accusamus id fuga cumque recusandae ipsa, corporis aspernatur debitis, aliquid, et omnis eum placeat quam!
+        Facilis laborum culpa unde omnis nobis voluptatem. Odio incidunt dolores molestias eligendi provident,
+        recusandae modi eius commodi autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit non illum
+        hic quos pariatur ipsam quo totam
+        accusamus id fuga cumque recusandae ipsa, corporis aspernatur debitis, aliquid, et omnis eum placeat quam!
+        Facilis laborum culpa unde omnis nobis voluptatem. Odio incidunt dolores molestias eligendi provident,
+        recusandae modi eius commodi autem.<br><br><br><br>
+
+
+    </div><br>
+    <div id="secondp">
+        <div class="second" align="center">Paleolithic</div>
+        <hr>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias doloribus porro, modi veniam corrupti
+        laudantium voluptatem nisi animi adipisci placeat iste eos maiores, laboriosam ducimus non similique nesciunt at
+        quasi, et impedit vero? Expedita at quae incidunt sint quos repellat. Quam itaque recusandae sapiente possimus,
+        alias explicabo maiores non aliquam nemo saepe magni ea nisi. Incidunt quasi perspiciatis nam aliquam ipsum odit
+        nobis? Voluptatum dicta, dolor voluptatibus cumque eius unde repellat. Dignissimos quas blanditiis aliquam
+        reprehenderit temporibus maiores nisi suscipit!<br><br><br><br><br><br>
+    </div><br>
+    <div class="row3">
+        <div class="trow1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="trow2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="trow3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+    </div><br>
+
+    <div class="row4">
+        <div class="t1row1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="t2row2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="t3row3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+    </div><br>
+    <div class="row3">
+        <div class="trow1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="trow2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="trow3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+    </div><br>
+    <div class="row5">
+        <div class="r1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+    </div><br>
+    <div class="row6">
+        <div class="r61">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r62">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r63">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+    </div><br>
+    <div class="row7">
+        <div class="r71">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r72">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r73">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+    </div><br>
+
+    <div class="row8">
+        <div class="r81">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufs<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut as<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r82">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurruf<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut a<br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+
+        <div class="r83">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos tenetur expedita harumfgdsjuwruwurrufsh<br>
+            eveniet id dolorum officiis nesciunt iusto quas ut <br>
+            quo obcaecati voluptate nulla quis, rem minusgfvggggv<br>
+            deserunt reiciendis laborum dolor accusantium maxime <br>
+            Earum placeat modi sapiente recusandae!<br><br><br></div>
+    </div><br>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
