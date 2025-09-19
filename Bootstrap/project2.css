@@ -1,0 +1,96 @@
+.row .fa-brands {
+    font-size: 70px;
+    color: burlywood;
+}
+
+.fa-brands span {
+    color: burlywood;
+    font-family: "Rubik Distressed", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.carousel-inner img {
+    height: 500px;
+    width: 90%;
+}
+
+.row img {
+    height: 250px;
+    width: 350px;
+}
+.row img:hover
+{
+    transform: scale(1.1);
+}
+h5{
+    font-family: cursive;
+}
+.abc
+{
+    color:burlywood ;
+    
+}
+.deals .fa-regular
+{
+    color: burlywood;
+    text-align: center;
+    
+}
+.content1
+{
+    padding-top: 10px;
+    
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+h4
+{
+    color:rgba(0, 0, 0, 0.671);
+}
+.service p
+{
+    color:rgba(0, 0, 0, 0.671);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.col .fa-brands
+{
+    font-size: 30px;
+}
+.icons .fa-brands
+{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 18px;
+}
+ul li
+{
+    list-style: none;
+}
+.footer h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons .fa-solid
+{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 15px;
+}
+
+.footer
+{
+    background-color:whitesmoke;
+}
+.ficon img
+{
+   height: 40px;
+   width: 80px;
+   float: right;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   
+}
+
+
