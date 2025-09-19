@@ -1,0 +1,17 @@
+
+*
+{
+    padding: 2px;
+    margin: 5px;
+    
+}
+
+.main{
+    background-color: rgb(139, 86, 0);
+    
+}
+button:hover
+{
+    color: brown;
+    opacity: 0.6;
+}

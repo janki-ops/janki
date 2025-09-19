@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Macondo&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .box
+        {
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .fa-house
+        {
+            display: none;
+        }
+
+        @media only screen and(max-width:500px)
+        {
+            .box
+            {
+                background-color: red;
+                display:block;
+                width: 95%;
+                margin: 10px;
+            }
+            .fa-solid
+            {
+                display: block;
+            }
+            #hm
+            {
+                display: none;
+            }
+        }
+
+        @media(min-width:700px) and (max-width:800px)
+        {
+            .box{
+                background-color: burlywood;
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <i class="fa-solid fa-house"></i>
+        <p id="hm">Home</p>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

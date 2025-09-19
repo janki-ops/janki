@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Macondo&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Macondo&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .logo
+        {
+            font-size: 30px;
+            padding: 20px;
+        }
+        header {
+            height: 80px;
+            width: 100%;
+            background-color: #002147;
+            color: aliceblue;
+            font-family: "Rubik Distressed", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            justify-content: space-between;
+            padding-right: 10px;
+             
+
+}
+
+        nav ul {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-size: larger;
+            list-style: none;
+            gap: 20px;
+            display: flex;
+            padding: 15;
+           
+        }
+       
+        nav button {
+            border-radius: 8px;
+            font-size: 20px;
+            padding: 3px;
+            background-color: purple;
+            color: aliceblue;
+            font-weight: 600;
+            padding: 5px;
+
+        }
+        a
+        {
+            color: aliceblue;
+        }
+        a:hover{
+            color: #4682B4;
+        }
+
+        button:hover {
+            background-color: plum;
+        }
+
+        .container {
+            background-color:#4682B4;
+            height: 500px;
+            background-image: url(https://yt3.googleusercontent.com/ytc/AIdro_n56zESKcv8nkGI67NFBn7pic52Vz1VMjAOgYPU_Md2UQ=s900-c-k-c0x00ffffff-no-rj);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        p {
+            color:  #002147;
+            text-align: center;
+            font-family: cursive;
+            font-weight: 800;
+            padding-top: 40px;
+           
+
+        }
+
+        .third {
+            color: #002147;
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 50px;
+           
+
+
+        }
+
+        .fourth {
+            color: #002147;;
+            text-align: center;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: 400;
+           
+
+        }
+        .fa-brands
+        {
+            color: rgb(255, 0, 0);
+            padding: 50px;
+            font-size: 50px;
+           left: 10px;
+            position: absolute;
+            
+        }
+        .second
+        {
+            color: #002147;
+            left :10px;
+           bottom: 25px;
+          
+        } 
+        .fa-solid
+        {
+            color: rgb(255, 153, 0);
+            padding: 50px;
+            font-size: 50px;
+            padding-left: 2px;
+            padding-left: 40px;
+            position: absolute;
+            right: 30px;
+            top: 150px;
+        }
+        .fb
+        {
+            color:crimson;
+            padding: 50px;
+            font-size: 50px;
+            padding-left: 2px;
+            padding-left: 40px;
+            position: absolute;
+            right: 80px;
+            top: 350px;
+        }
+        .fc{
+             color:green;
+            padding: 50px;
+            font-size: 50px;
+            padding-left: 2px;
+            padding-left: 40px;
+            position: absolute;
+            left: 150px;
+            top: 250px;
+        }
+        .footer
+        {
+            background-color: #002147;
+            height: 250px;
+            width: 100%;
+            margin: auto;
+            padding: 0px 100px;
+            
+         }
+         .row
+         {
+            display: flex;
+            flex-wrap: wrap;
+            
+         }
+         .footer-col
+         {
+            
+           width: 20%;
+           padding: 10px 13px;
+            
+         }
+         .footer-col h4
+         {
+            font-size: 20px;
+            color: aliceblue;
+            margin-bottom: 30px;
+         }
+         .footer-col ul li a:hover{
+            color:#4682B4 ;
+         }
+        li{
+            list-style: none;
+            padding: 10px 2px;
+            color: aliceblue;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .social-links a i:hover
+        {
+            color: #4682B4;
+        }
+        .copyright
+        {
+            color:brown;
+            font-size: 10px;
+            
+        }
+        .copyright1
+        {
+            color:aliceblue;
+            font-size: 13px;
+        }
+        .copyright:hover{
+            color:#4682B4;
+        }
+        .copyright1:hover{
+            color:#4682B4;
+        }
+
+
+       
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">Artist Hub</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Artist Support</a></li>
+                    <li></li>
+                    <li></li>
+                    <button>Sign In</button>
+                    <button>Sign Up</button>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div class="container">
+            <i class="fa-brands  fa-youtube"></i>
+             <i class="fa-brands second fa-discord"></i>
+             <i class="fa-solid fa-music"></i>
+             <i class="fa-solid fb fa-palette"></i>
+             <i class="fa-brands fc fa-spotify"></i>
+            <p>RELEASE. ENGAGE. GROW.</p><br>
+            <div class="third">Artist
+hub</div><br>
+
+            <div class="fourth">Motion Array artist hub—Get started and grow your success with Insights,<br>
+                 Inspiration, an Event Calendar, Support, Articles, Artist spotlights, and more.<br>
+                </div>
+            
+        </div>
+    </div>
+    <hr>
+     <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Artist Hub</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#">Inspiration</a></li>
+                         <li><a href="#">Artist Support</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Inspiration</h4>
+                    <ul>
+                        <li><a href="#">Artist spotlight</a></li>
+                        <li><a href="#">NewsLetters</a></li>
+                        <li><a href="#">MA Champions</a></li>
+                        <li><a href="#">Artist Grant Program</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Artist support</h4>
+                    <ul>
+                        <li><a href="#">News artist</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Artist</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-linkedin-in"></i></a><br><br><br>
+                <div class="copyright">© 2025 ARTISTHUB. All Rights Reserved</div><br>
+                 <div class="copyright1">Privacy Policy</div><br>
+                  <div class="copyright1">Terms & conditions</div>
+                 </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+     </footer>
+      
+            
+        
+       
+        
+       </footer>
+</body>
+
+</html>

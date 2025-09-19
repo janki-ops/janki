@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 90px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            font-size: large;
+        }
+        nav ul{
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            font-size:large;
+            gap:90px;
+        
+
+        }
+        li a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover
+        {
+            color:antiquewhite;
+        }
+        .content
+        {
+            height: 450px;
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            gap: 60px;
+            justify-content: space-around;
+            padding: 60px;
+        }
+        .column
+        {
+            background-color: beige;
+            height: 200px;
+            padding: 20px;
+            font-size: 20px;
+            border-radius:6px;
+        }
+        footer{
+            height: 90px;
+            width: 100%;
+            background-color: gray;
+            font-size: larger;
+            text-align: center;
+            padding-top: 35px;
+        }
+      @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="column">
+            <h3>Column1</h3><br><br>
+            <p>Column1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam?</p>
+        </div>
+        <div class="column">
+            <h3>Column2</h3><br><br>
+            <p>Colum2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, laborum!</p>
+        </div>
+    </div>
+    <footer> <p>&copy; 2025 My Responsive Website</p></footer>
+</body>
+</html>
