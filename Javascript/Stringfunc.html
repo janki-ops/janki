@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="    hi hello how are you? hi   "
+
+        document.write('<br> length is '+ str.length)
+
+        document.write('<br> Uppercase is '+str.toUpperCase())
+
+        document.write('<br> Lowercase is '+ str.toLowerCase())
+
+        str2=str.slice(5)
+        document.write('<br> '+str2)
+
+        document.write('<br> '+str2.length)
+
+        //trim
+        document.write('<br> '+str.trim().length)
+        document.write('<br> '+ str.trimStart().length)
+        document.write('<br> '+str.trimEnd().length)
+
+
+        //padstart padend
+        let n="356"
+        let r=n.padStart(6,"ja")
+        document.write('<br> '+r)
+
+        r=n.padEnd(6,"jn")
+        document.write('<br> '+r)
+
+        let res=str.substr(3,9)
+        document.write('<br> '+res)
+
+        res=str.replace(/Hi/ig,'TEST')
+        document.write('<br> '+res)
+
+        res=str.replaceAll(/hI/ig,"JANKI")
+        document.write('<br> '+res)
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=1729
+        let n=no
+        sum=0
+
+        while(no>0)
+    {
+        let r=no%10
+        sum+=r
+        no=Math.floor(no/10)
+
+    }
+    document.write('<br>sum is '+sum)
+
+    let f=sum
+    let rev=0
+
+    while(sum>0)
+    {
+        let r=sum%10
+        rev=(rev*10)+r
+        sum=Math.floor(sum/10)
+
+    }
+    document.write('<br> reverse is '+rev)
+
+    if(f*rev)
+    {
+        document.write('<br> it is magic numberr')
+    }
+    else('<br> it is not magic number ')
+    </script>
+</body>
+</html>

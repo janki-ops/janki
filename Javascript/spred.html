@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50]
+        let arr2=[100,200,300]
+
+        let m=[...arr,...arr2]
+        document.write('<br> '+m)
+//restof operator
+        var[a,b,c,g,f,h,u]=m
+        document.write('<br> '+ a)
+        document.write('<br> '+g)
+
+    var[a,b,c,...x]=m
+    document.write('<br> '+a)
+     document.write('<br> '+b)
+     document.write('<br> '+c)
+     document.write('<br> '+x)
+
+    </script>
+</body>
+</html>

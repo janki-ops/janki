@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car={
+            Brand:"Toyota",
+            Model:"Corolla",
+            Year:2020
+        }
+        document.write('<br> Car Brand is '+car.Brand)
+        document.write('<br> Car Model is '+car.Model)
+        document.write('<br><hr>')
+
+        //update salary
+        car.Year=2025
+        for(var a in car){
+            document.write('<br>  ' + a, ' is ' + car[a])
+        }
+        document.write('<br><hr>')
+        //add a new property
+        car.Color="blue"
+        for(var a in car){
+        document.write('<br> '+ a ," is "+ car[a])
+        }
+
+    </script>
+</body>
+</html>
