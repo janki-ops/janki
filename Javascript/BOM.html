@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<div id="demo">hiii</div>
+<span id="hour">00</span>:
+<span id="min">00</span>:
+<span id="txt">00</span>
+<body>
+    <script>
+
+        setTimeout(()=>{
+            document.getElementById('demo').innerHTML="Hello"
+        },3000)
+        document.write('<br>addition is '+(25+24))
+        let count=0
+        let min=0
+        let hour=0
+        setInterval(()=>{
+            document.getElementById('txt').innerHTML=count++
+            if(count>10){
+                document.getElementById('min').innerHTML=++min
+                count=0
+
+                if(min>2)
+                document.getElementById('hour').innerHTML=++hour
+                min=0
+                
+            }
+        },1000
+    )
+    </script>
+</body>
+</html>

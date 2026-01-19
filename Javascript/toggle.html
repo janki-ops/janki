@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Clicked</button>
+    <script>
+    let btnmode=document.querySelector("#btn1")
+    let current="Light"
+
+    btnmode=addEventListener("click",()=>{
+        if(current==="Light"){
+            current="Dark"
+            document.querySelector("body").style.backgroundColor="black";
+        }
+        else{
+            current="Light"
+            document.querySelector("body").style.backgroundColor="white";
+        }
+        console.log(current)
+    })
+    
+    </script>
+</body>
+</html>

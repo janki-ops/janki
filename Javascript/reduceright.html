@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50]
+            res=arr.reduceRight((i,j)=>{
+                return i+j
+            })
+            console.log(res)
+
+
+        let arr2=[34,45,23,2,66,54]
+        let max=arr2.reduce((i,j)=>{
+                if(i<j)
+                {
+                    i=j
+                }
+                return i
+        })
+        document.write('<br> maximum number is '+max)
+
+
+        
+        
+    </script>
+</body>
+</html>

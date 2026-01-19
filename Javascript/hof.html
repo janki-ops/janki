@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const iseven=(i)=>{
+            return i%2==0
+        }
+
+        const hof=(f,n)=>{
+            let ans=f(n)
+            if(ans){
+                document.write('<br> it is even no')
+            }
+            else{
+                document.write('<br> it is odd no')
+            }
+        }
+        hof(iseven,21)
+    </script>
+</body>
+</html>

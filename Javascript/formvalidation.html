@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form validation</h2>
+    <form action="#" method="post" name="frm" onsubmit="return checkdata()">
+        <label for="" >Name:</label>
+        <input type="text" name="name" id="name">
+        <span id="nameerr" class="error"></span>
+        <br><br>
+
+        <label for="" >Mobile No:</label>
+        <input type="text" name="mno" id="mno">
+        <span id="monoerr" class="error"></span>
+        <br><br>
+
+        <label for="" >Email:</label>
+        <input type="text" name="email" id="email">
+        <span id="emailerr" class="error"></span>
+        <br><br>
+
+        <label for="">Password:</label>
+        <input type="text" name="pwd" id="pwd">
+        <span id="pwderr" class="error"></span>
+        <br><br>
+
+        <input type="submit" value="Save">
+
+
+    </form>
+    <script>
+            let status=0
+            const checkdata=()=>{
+                document.getElementById('nameerr').innerHTML=""
+                document.getElementById('monoerr').innerHTML=""
+                document.getElementById('emailerr').innerHTML=""
+                document.getElementById('pwderr').innerHTML=""
+            
+
+            let nm=document.frm.name.value
+            let mno=document.frm.mno.value
+            let email=document.frm.email.value
+            let pwd=document.frm.pwd.value
+
+            let nameptn=/[A-Za-z]$/
+            if(nm==""){
+                document.getElementById('nameerr').innerHTML="please enter name"
+                status=1
+            }
+            else if(nm.length<2||nm.length>10){
+                document.getElementById('nameerr').innerHTML="name must be 2 to 10 character"
+                status=1
+            }
+            else if(!nameptn.test(nm)){
+                document.getElementById('nameerr').innerHTML="please enter only alphabets"
+                status=1
+            }
+
+            let mnoptn=/[0-9]{10,12}$/
+            if(mno==""){
+                document.getElementById('monoerr').innerHTML="please enter your mobile number"
+                status=1
+            }
+            else if(!mnoptn.test(mno)){
+                document.getElementById('monoerr').innerHTML="please enter only digits"
+                status=1
+            }
+
+            
+            let emptn=/^[A-Za-z0-9]+@[A-Za-z]+.[A-Za-z]{2,3}$/
+            if(email=="")
+            {
+                document.getElementById('emailerr').innerHTML="please enter email"
+                status=1
+            }
+            else if(!emptn.test(email)){
+                document.getElementById('emailerr').innerHTML="pelase enter valid email"
+                status=1
+            }
+
+            var caps=/[A-Z]/
+            var small=/[a-z]/
+            var dgt=/[0-9]/
+            var spc=/[@#$*%!]/
+
+            if(pwd==""){
+                document.getElementById('pwderr').innerHTML="please enter password"
+                status=1
+            }
+            else if(pwd.length<8){
+                document.getElementById('pwderr').innerHTML="password must be 8 character or more than"
+                status=1
+            }
+            else{
+                if(!caps.test(pwd)){
+                    document.getElementById('pwderr').innerHTML ="password must be contain 1 capital"
+                    status=1
+                }
+
+                if(!small.test(pwd)){
+                    document.getElementById('pwderr').innerHTML+="password must be contain 1 small"
+                    status=1
+                }
+
+                if(!dgt.test(pwd)){
+                    document.getElementById('pwderr').innerHTML+="password must be contain 1 digit"
+                    status=1
+                }
+
+                if(!spc.test(pwd)){
+                    document.getElementById('pwderr').innerHTML+="password must be contain 1 special character"
+                    status=1
+                }
+            }
+
+            if (status == 0) {
+                return true
+            } else {
+                return false
+            }
+
+
+                
+        }
+
+
+
+
+             
+    </script>
+
+</body>
+</html>

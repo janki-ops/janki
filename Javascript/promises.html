@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age=16
+        const  pr=new Promise((rs,rj)=>{
+            if(age>=18){
+                rs("eligible for vote")
+            }
+            else{
+                rs("not eligible for vote")
+            }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log("error is "+msg))
+    </script>
+</body>
+</html>

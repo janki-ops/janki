@@ -1,26 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</hea
+d>
+
 <body>
     <div id="demo"></div><br><br>
     <button onclick="add()"> Add</button>
-    <button onclick="xyz()">Change</button>
-    <script>
-        document.getElementById('demo').innerHTML="<b>Helloo...</b>"
-        document.getElementById('demo').innerText="<b>hellooo....</b>"
+    <button onclick="xyz()">Change</button><br><br>
 
-        let add=()=>{
-            document.getElementById('demo').style.color="red"
-            document.getElementById('demo').style.backgroundColor="yellowgreen"
-        }
-        let xyz=()=>{
-            document.getElementById('demo').style.color="blue"
-            document.getElementById('demo').style.backgroundColor="aqua"
-        }
+    <input type="text" name="uname">
+
+    <input type="text" name="uname">
+    <input type="checkbox" name="edu" >BA
+    <input type="checkbox" name="edu" >BCA
+    <input type="checkbox" name="edu" >BBA
+    <input type="checkbox" name="edu" >BCOM
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos quae dolores pariatur ut repudiandae ipsam
+        fugiat praesentium quaerat? Quidem delectus iste sed dolorum dignissimos assumenda qui exercitationem
+        voluptatibus quis temporibus consequuntur rerum, quisquam amet! Minima repellat totam eaque dolore quos animi
+        molestiae officiis mollitia, maiores consequatur iure sint temporibus.</p>
+
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos quae dolores pariatur ut repudiandae ipsam
+        fugiat praesentium quaerat? Quidem delectus iste sed dolorum dignissimos assumenda qui exercitationem
+        voluptatibus quis temporibus consequuntur rerum, quisquam amet! Minima repellat totam eaque dolore quos animi
+        molestiae officiis mollitia, maiores consequatur iure sint temporibus.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos quae dolores pariatur ut repudiandae ipsam
+        fugiat praesentium quaerat? Quidem delectus iste sed dolorum dignissimos assumenda qui exercitationem
+        voluptatibus quis temporibus consequuntur rerum, quisquam amet! Minima repellat totam eaque dolore quos animi
+        molestiae officiis mollitia, maiores consequatur iure sint temporibus.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos quae dolores pariatur ut repudiandae ipsam
+        fugiat praesentium quaerat? Quidem delectus iste sed dolorum dignissimos assumenda qui exercitationem
+        voluptatibus quis temporibus consequuntur rerum, quisquam amet! Minima repellat totam eaque dolore quos animi
+        molestiae officiis mollitia, maiores consequatur iure sint temporibus.</p>
+    <script>
+        // document.getElementById('demo').innerHTML="<b>Helloo...</b>"
+        // document.getElementById('demo').innerText="<b>hellooo....</b>"
+
+        // let add=()=>{
+        //     document.getElementById('demo').style.color="red"
+        //     document.getElementById('demo').style.backgroundColor="yellowgreen"
+        // }
+        // let xyz=()=>{
+        //     document.getElementById('demo').style.color="blue"
+        //     document.getElementById('demo').style.backgroundColor="aqua"
+        // }
+        document.getElementsByClassName('abc')[1].style.color="yellowgreen"
+        let b=document.getElementsByTagName('p')
+        
+        
+    //      for(let i=0;i<b.length;i++)
+    //  {
+    //     if(i%2==0)
+    // {
+    //     // b[i].style.color="yellowgreen"
+         
+    // }
+    // else
+    // {
+    //     // b[i].style.color="green"
+        
+   
+    // }
+    // }
+
+    // a[0].style.color="purple"
+    // console.log(a)
+    // console.getElementsByTagName("p")[1].style.color="purple"
+
+    //name
+    document.getElementsByName('uname')[1].style.backgroundColor="lightpink"
+    document.getElementsByName('edu')[0].checked="true"
+    document.getElementsByName('edu')[3].checked="true"
+        
+
     </script>
 </body>
+
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn"></div>
+    <script>
+        let btn=document.createElement('button')
+        let res=document.createTextNode('Press The Button')
+        btn.append(res)
+        console.log(btn)
+
+        document.getElementById('btn').append(btn)
+        btn.addEventListener("click",function(){
+        alert("Button clicked")
+        })
+    </script>
+</body>
+</html>

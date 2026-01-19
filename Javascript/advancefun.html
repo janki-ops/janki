@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50,20]
+        // let res=arr.map((i,j)=>{
+        //     return i*2
+        // })
+        // document.write('<br> '+arr)
+        // document.write('<br> '+res)
+        let res=arr.filter((i,j)=>{
+            return i==20
+        })
+        document.write('<br> '+res)
+
+//find
+let ans=arr.find((i,j)=>{
+    return i==20
+})
+document.write('<br> '+ans)
+
+
+        //reduce
+        let total=arr.reduce((i,j)=>{
+            return i+j
+        })
+        document.write('<br>total is  '+total)
+    </script>
+</body>
+</html>

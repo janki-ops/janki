@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id">
+    HELLLOOOOOOO
+    <br><br>
+   
+   <span id="hour">Hour</span>:
+   <span id="min">Minit</span>:
+   <span id="sec">Second</span>
+    </div>
+    <script>
+    setTimeout(()=>{
+        document.body.style.backgroundColor="purple"
+    },5000)
+
+
+    //digital clock
+     second=0
+     minit=0
+     hour=0
+
+     setInterval(()=>{
+            document.getElementById('sec').innerHTML=second++
+            if(second>10){
+                document.getElementById('min').innerHTML=++minit
+                second=0
+
+                if(minit>1)
+            {
+                document.getElementById('hour').innerHTML=++hour
+                minit=0
+            }
+            }
+     },1000)
+        
+    
+    </script>
+</body>
+</html>

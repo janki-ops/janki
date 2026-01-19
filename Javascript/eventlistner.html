@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+    //     let ul=document.createElement('ul')
+    //     let li=document.createElement('li')
+    //     let li2=document.createElement('li')
+    //     let li3=document.createElement('li')
+       
+    //    document.getElementById('demo').appendChild(ul)
+    //    ul.appendChild(li)
+    //    ul.appendChild(li2)
+    //    ul.appendChild(li3)
+      
+    //    li.append("BCA")
+    //    li2.append("BBA")
+    //    li3.append("BCOM")
+
+    let btn=document.createElement('button')
+    let txt=document.createTextNode('ADD DATA')
+    console.log(btn)
+    btn.appendChild(txt)
+    document.getElementById('demo').append(btn)
+    btn.addEventListener('click',function(){
+        alert("Heloooooo")
+    })
+
+
+    </script>
+</body>
+</html>
